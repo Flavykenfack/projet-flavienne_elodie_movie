@@ -19,15 +19,6 @@ gulp.task('serve:dist', gulp.series('default', 'browsersync:dist'));
 gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('watch', watch);
 
-var deploy = require('gulp-deploy-git');
-gulp.task('deploy', function() {
-  return gulp.src('**/*',  { read: false, cwd: 'dist'  })
-    .pipe(deploy({
-      repository: 'git@github.com:heg-web/projet-flavienne_elodie_movie.git',
-      remoteBranch:   'gh-pages'
-    }))
-});
-
 function reloadBrowserSync(cb) {
   browserSync.reload();
   cb();
@@ -56,7 +47,7 @@ var deploy = require('gulp-deploy-git');
 gulp.task('deploy', gulp.series('set-dist', 'default', function () {
   return gulp.src('**/*', {read: false, cwd: 'dist'})
     .pipe(deploy({
-      repository: 'git@github.com:heg-web/projet-demo.git',
+      repository: 'git@github.com:heg-web/projet-flavienne_elodie_movie.git',
       remoteBranch: 'gh-pages'
     }));
 }));
