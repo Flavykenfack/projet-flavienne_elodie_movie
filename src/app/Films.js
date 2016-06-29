@@ -9,14 +9,16 @@ angular
           $ctrl.films = result.data.results;
         });
 
-      $ctrl.addItem = function () {
-        $ctrl.maListe.push($ctrl.maVariable);
-        Enregistrer.save($ctrl.maListe);
+      $ctrl.listeFilms = [$ctrl.films];
+
+      $ctrl.addItem = function (el) {
+        $ctrl.listeFilms.push(el);
+        Enregistrer.enregistrer($ctrl.listeFilms);
       };
 
       $ctrl.delItem = function (item) {
-        var index = $ctrl.maListe.indexOf(item);
-        $ctrl.maListe.splice(index, 1);
+        var index = $ctrl.listeFilms.indexOf(item);
+        $ctrl.listeFilms.splice(index, 1);
       };
     }
   });

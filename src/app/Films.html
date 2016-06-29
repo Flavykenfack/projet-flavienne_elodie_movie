@@ -1,9 +1,13 @@
 <div class="col-md-12">
         <h2>Afficher</h2>
             <li ng-repeat="el in $ctrl.films track by $index">
+            <a ui-sref="app.infoFilm({infoFilmId: el.id})">{{el.id}}</a>
             <poster m="el"></poster>
-            {{el.poster_path}} {{el.orignial_title}} {{el.id}}
-                <button ng-click="$ctrl.supprimerDeListe(el)" class="glyphicon glyphicon-trash" aria-hidden="true"></button>
+            {{el.poster_path}} {{el.orignial_title}} {{el.id}} {{$index}}
+                <button ng-click="$ctrl.delItem(el)" class="glyphicon glyphicon-trash"></button>
+                <button ng-click="$ctrl.addItem(el.id)" class="glyphicon glyphicon-film"></button>
             </li>
         </ul>
-    </div>
+        <div class="form-group">
+          <input type="text" ng-model="$ctrl.maVariable" class="form-control" id="input">   
+          </div>

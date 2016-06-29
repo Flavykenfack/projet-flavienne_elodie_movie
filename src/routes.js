@@ -19,17 +19,22 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     })
 
     .state('app.films', {
-      url: '/films',
+      url: 'films',
       template: '<films></films>'
     })
 
+    .state('app.infoFilm', {
+      url: 'films/:infoFilmId',
+      template: '<infoFilm></infoFilm>'
+    })
+
     .state('app.poster', {
-      url: '/poster/:posterId',
+      url: 'poster/:posterId',
       template: '<poster></poster>'
     })
 
     .state('app.panier', {
-      url: '/panier',
+      url: 'panier',
       template: '<panier></panier>'
     });
 }
