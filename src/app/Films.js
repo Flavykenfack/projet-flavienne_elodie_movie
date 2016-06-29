@@ -9,7 +9,7 @@ angular
           $ctrl.films = result.data.results;
         });
 
-      $ctrl.listeFilms = [$ctrl.films];
+      $ctrl.listeFilms = [];
 
       $ctrl.addItem = function (el) {
         $ctrl.listeFilms.push(el);
