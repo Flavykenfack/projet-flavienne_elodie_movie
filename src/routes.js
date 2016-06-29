@@ -11,5 +11,25 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('app', {
       url: '/',
       template: '<app></app>'
+    })
+
+    .state('app.home', {
+      url: '/',
+      template: '<app></app>'
+    })
+
+    .state('app.films', {
+      url: '/films',
+      template: '<films></films>'
+    })
+
+    .state('app.poster', {
+      url: '/poster/:posterId',
+      template: '<poster></poster>'
+    })
+
+    .state('app.panier', {
+      url: '/panier',
+      template: '<panier></panier>'
     });
 }

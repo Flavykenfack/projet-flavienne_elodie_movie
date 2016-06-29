@@ -1,11 +1,11 @@
-function posterController() {
-  this.text = 'My brand new component!';
-}
-
 angular
   .module('app')
   .component('poster', {
-    templateUrl: 'app/Poster.html',
-    controller: posterController
+    templateUrl: 'app/poster.html',
+    controller: function posterController() {
+      this.text = 'POSTER';
+    },
+    bindings: {
+      m: '<'
+    }
   });
-
