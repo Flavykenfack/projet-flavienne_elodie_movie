@@ -46,3 +46,17 @@ function watch(done) {
   gulp.watch(conf.path.src('**/*.js'), gulp.series('inject'));
   done();
 }
+
+gulp.task('set-dist', function (done) {
+  process.env.DIST = true;
+  done();
+});
+
+var deploy = require('gulp-deploy-git');
+gulp.task('deploy', gulp.series('set-dist', 'default', function () {
+  return gulp.src('**/*', {read: false, cwd: 'dist'})
+    .pipe(deploy({
+      repository: 'git@github.com:heg-web/projet-demo.git',
+      remoteBranch: 'gh-pages'
+    }));
+}));
