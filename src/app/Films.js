@@ -15,5 +15,14 @@ angular
         $ctrl.listeFilms.push(el);
         Enregistrer.enregistrer($ctrl.listeFilms);
       };
+
+      $ctrl.controlfilm = function (item) {
+        for (var i = 0; i < $ctrl.listeFilms.length; i++) {
+          if ($ctrl.listeFilms[i].id === item) {
+            return true;
+          }
+        }
+        return false;
+      };
     }
   });

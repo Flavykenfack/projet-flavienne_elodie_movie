@@ -4,8 +4,9 @@
             <div class="thumbnail">
                 <div class="caption">
                     <h4>{{ film.title }}</h4>
-                    <poster m="film"></poster>
-                    <button type="button" class="btn btn-info disabled" ng-click="$ctrl.addItem(film)"><span class="glyphicon glyphicon-film"></span></button>
+                    <poster m="film"></poster></p>
+                    <p ng-hide="$ctrl.controlfilm(film.id)"><button type="button" class="btn btn-info" 
+                    ng-click="$ctrl.addItem(film)"><span class="glyphicon glyphicon-film"></span></button></p>
                 </div>
             </div>
         </div>

@@ -7,7 +7,7 @@
           <poster m="film"></poster>       
           <p><strong>Description:</strong> {{film.overview}}</p>
           <p><strong>Date de sortie :</strong> {{film.release_date}}</p>
-          <button ng-click="$ctrl.delItem(film)" class="glyphicon glyphicon-trash"></button>
+          <button type="button" class="btn btn-info" ng-click="$ctrl.delItem(film)"><span class="glyphicon glyphicon-trash"></span></button>
         </div>
       </div>
   </div>
