@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Création d'un site web basé sur une liste de films
 
 ## Fonctionnement du site
@@ -7,9 +6,6 @@
   <li> Panier <li>
 <ul>  
 
-Notre projet consiste à mettre en place une application web sur la liste des films.
-=======
-# Création d'un site web basé sur une liste de films
 
 ## Nos pages
   <li> Page d'accueil contenant la liste de tous les films </li>
@@ -40,4 +36,4 @@ Notre projet consiste à mettre en place une application web sur la liste des fi
 ### Bouton d'ajout vers panier
 >Pour éviter d'avoir plusieurs fois le même film dans le panier, nous avons pensé à cacher le bouton d'ajout vers le panier. Nous avons constaté que le bouton pouvait être caché grâce à une propriété Angular ng-hide. 
 >Pour exploiter cette propriété nous avons créé une fonction qui nous retourne un boolean. Le resultat de ce boulean permet de cacher le bouton ajout une fois que le film est présent dans le panier.
->>>>>>> origin/master
+
