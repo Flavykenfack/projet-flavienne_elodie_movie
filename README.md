@@ -24,7 +24,7 @@
 
 ### Affichage d'un film sur une page
 >Nous avons pensé chercher les informations dans le localStorage pour le détails d'un film passé en paramètre. 
->Après plusieurs tests nous nous sommes rendues comptes que les données du site via l'API et que nous devons passé en paramètre l'Id du film. Ceci a été facile à mettre en place.
+>Après plusieurs tests nous nous sommes rendues comptes que les données devaient provenir du site via l'API et que nous devons passer en paramètre l'Id du film. Ceci a été facile à mettre en place.
 
 ### Bouton d'ajout vers panier
 >Pour éviter d'avoir plusieurs fois le même film dans le panier, nous avons pensé à cacher le bouton d'ajout vers le panier. Nous avons constaté que le bouton pouvait être caché grâce à une propriété Angular ng-hide. 
