@@ -2,7 +2,7 @@ angular
   .module('app')
   .component('films', {
     templateUrl: 'app/films.html',
-    controller: function (Enregistrer, $http) {
+    controller: function (Enregistrer, Supprimer, $http) {
       var $ctrl = this;
       $http.get('http://amc.ig.he-arc.ch:3003/movie/upcoming?language=fr')
         .then(function (result) {
@@ -17,8 +17,8 @@ angular
       };
 
       $ctrl.delItem = function (item) {
-        var index = $ctrl.listeFilms.indexOf(item);
-        $ctrl.listeFilms.splice(index, 1);
+        Supprimer.supprimer(item);
+        Enregistrer.enregistrer($ctrl.listeFilms);
       };
     }
   });
