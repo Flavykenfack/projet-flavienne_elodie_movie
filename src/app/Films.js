@@ -15,15 +15,5 @@ angular
         $ctrl.listeFilms.push(el);
         Enregistrer.enregistrer($ctrl.listeFilms);
       };
-      $ctrl.movieDansMaListe = function (testMovieId) {
-        for (var i = 0, l = $ctrl.myMovies.length; i < l; ++i) {
-          if ($ctrl.myMovies[i].id === testMovieId) {
-            return true;
-          }
-        }
-        return false;
-      };
-
-
     }
   });

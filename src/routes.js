@@ -12,12 +12,6 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
       url: '/',
       template: '<app></app>'
     })
-
-    .state('app.home', {
-      url: '/',
-      template: '<app></app>'
-    })
-
     .state('app.films', {
       url: 'films',
       template: '<films></films>'
@@ -25,14 +19,8 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 
     .state('app.infoFilm', {
       url: 'films/:infoFilmId',
-      template: '<infoFilm></infoFilm>'
+      template: '<info-film></info-film>'
     })
-
-    .state('app.poster', {
-      url: 'prochainement/',
-      template: '<poster></poster>'
-    })
-
     .state('app.panier', {
       url: 'panier',
       template: '<panier></panier>'

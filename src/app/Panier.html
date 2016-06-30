@@ -3,7 +3,7 @@
   <div class="col-xs-6 col-sm-6 col-md-6" ng-repeat="film in $ctrl.listeFilms track by $index"">
       <div class="thumbnail">
         <div class="caption">
-          <h4><a ui-sref="app.infoFilm({infoFilmId: film.id})">{{ film.title }}</a></h4>
+          <h4><a ui-sref="app.infoFilm({infoFilmId: film.id})">{{film.title }}</a></h4>
           <poster m="film"></poster>       
           <p><strong>Description:</strong> {{film.overview}}</p>
           <p><strong>Date de sortie :</strong> {{film.release_date}}</p>

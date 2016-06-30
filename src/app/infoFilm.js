@@ -1,6 +1,9 @@
-function infoFilmController($stateParams) {
+function infoFilmController($stateParams, $http) {
   var $ctrl = this;
-  $ctrl.text = 'film: ' + $stateParams.infoFilmId;
+  $http.get('http://amc.ig.he-arc.ch:3003/movie/' + $stateParams.infoFilmId + '?language=fr')
+    .then(function (result) {
+      $ctrl.unFilm = result.data;
+    });
 }
 
 angular
