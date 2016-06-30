@@ -1,7 +1,6 @@
-<div class="col-md-12">
-    <h2>Afficher</h2>
+<h2>Liste des films</h2>
     <div class="row">
-        <div class="col-md-3" ng-repeat="film in $ctrl.films | filter:search">
+        <div class="col-xs-6 col-sm-4 col-md-4" ng-repeat="film in $ctrl.films">
             <div class="thumbnail">
                 <div class="caption">
                     <h4>{{ film.title }}</h4>
@@ -11,4 +10,3 @@
             </div>
         </div>
     </div>
-</div>

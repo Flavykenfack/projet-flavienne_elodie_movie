@@ -29,7 +29,7 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     })
 
     .state('app.poster', {
-      url: 'poster/:posterId',
+      url: 'prochainement/',
       template: '<poster></poster>'
     })
 
