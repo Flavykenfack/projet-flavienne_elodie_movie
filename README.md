@@ -1,10 +1,5 @@
 # Création d'un site web basé sur une liste de films
 
-## Fonctionnement du site
-  <li> Page d'accueil contenant la liste de tous les films </li>
-  <li> Panier contenant nos films favoris (panier) </li>
-
-
 ## Nos pages
   <li> Page d'accueil contenant la liste de tous les films </li>
   <li> Panier contenant nos films favoris (panier) </li>
