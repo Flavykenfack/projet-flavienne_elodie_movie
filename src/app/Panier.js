@@ -1,7 +1,7 @@
 angular
   .module('app')
   .component('panier', {
-    templateUrl: 'app/Panier.html',
+    templateUrl: 'app/panier.html',
     controller: function (Enregistrer) {
       var $ctrl = this;
       $ctrl.listeFilms = Enregistrer.charger('PanierSerializable');
